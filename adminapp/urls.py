@@ -2,7 +2,7 @@ from django.urls import path, include
 from. import views
 
 urlpatterns = [
-    path('', views.projecthomepage, name= 'projecthomepage'),
+    path('', views.projecthomepage, name= 'projectHomepage'),
     path('printpagecall/',views.printpagecall, name='printpagecall'),#-- exactly match with projectnavbar.html
     path('printpagelogic/',views.printpagelogic, name='printpagelogic'),
     path('exceptionpagelogic/', views.exceptionpagelogic, name='exceptionpagelogic'),#--must with ExceptionExample.html
