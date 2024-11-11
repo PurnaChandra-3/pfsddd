@@ -6,7 +6,7 @@ from .forms import TaskForm
 
 # Create your views here.
 def projecthomepage(request):
-    return render(request,'ProjecthomePage.html')
+    return render(request,'projecthomePage.html')
 
 def printpagecall(request):
     return render(request,'adminapp/printer.html')
