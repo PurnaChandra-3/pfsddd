@@ -6,7 +6,7 @@ from .forms import TaskForm
 
 # Create your views here.
 def projecthomepage(request):
-    return render(request,'ProjectHomePage.html')
+    return render(request,'ProjecthomePage.html')
 
 def printpagecall(request):
     return render(request,'adminapp/printer.html')
@@ -188,7 +188,7 @@ def UserRegisterLogic(request):
                 )
                 user.save()
                 messages.info(request, 'Account created Successfully!')
-                return render(request, 'adminapp/Projecthomepage.html')
+                return render(request, 'adminapp/projecthomepage.html')
         else:
             messages.info(request, 'Passwords do not match.')
             return render(request, 'adminapp/UserRegisterPage.html')
